@@ -1,0 +1,23 @@
+<html>
+    <script src= "../src/parent-script.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href = "../styles/style.css">
+<body>
+    <div class="parent-content">
+        <button class="btn info-btn" onclick="confirmationModal('Are you sure you want to continue?')">Click me!</button>
+        <p id="confirmationResponse"></p>
+    </div>
+
+
+<div id="myModal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+        <p id="confirmationText"></p>
+        <div>
+            <button class="btn yes-btn" onclick= "setConfirmResponse(true)">Yes</button>
+            <button class= "btn cancel-btn" onclick= "setConfirmResponse(false)">Cancel</button>
+        </div>
+
+    </div>
+</div>
+</body>
+</html>
